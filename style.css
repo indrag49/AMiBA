@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.navbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #9bbbd4;
+    padding: 120px 80px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    max-width: 900px;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 90px 80px;
+}
+
+.section.alt {
+    background: #f5f7fa;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* GRID CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* REPORTS */
+.reports li {
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #111;
+    color: white;
+}
