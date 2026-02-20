@@ -1,77 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
     color: #1a1a1a;
-    line-height: 1.6;
+    line-height: 1.65;
+    background: #f6f7f5;
 }
 
-/* NAVBAR */
+/* remove browser default heading spacing */
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 60px;
+    align-items: center;
+    padding: 22px 70px;
     background: white;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
 }
 
 .logo {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
 }
 
 .navbar a {
-    margin-left: 25px;
+    margin-left: 28px;
     text-decoration: none;
-    color: #333;
+    color: #374151;
     font-weight: 500;
+    font-size: 15px;
 }
 
-/* HERO SECTION */
+.navbar a:hover {
+    color: #111;
+}
+
+/* ---------------- HERO (landing page) ---------------- */
+
 .hero {
     background: #8FA79A;
-    padding: 120px 80px;
+    padding: 140px 80px 120px 80px;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 52px;
+    line-height: 1.15;
     max-width: 900px;
     font-weight: 800;
+    color: #0f1a14;
+    margin-bottom: 28px;
 }
 
 .hero p {
     font-size: 20px;
-    max-width: 700px;
+    max-width: 720px;
+    color: #1f2b24;
 }
 
-/* SECTIONS */
+/* ---------------- SUBHERO (research pages) ---------------- */
+
+.subhero {
+    padding: 140px 80px 90px 80px;
+    background: #6C8577;
+}
+
+.subhero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #0f1a14;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    font-size: 20px;
+    max-width: 720px;
+    color: #1f2b24;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
 .section {
     padding: 90px 80px;
 }
 
 .section.alt {
-    background: #f5f7fa;
+    background: #f0f3f1;
 }
 
-h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.section h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 22px;
 }
 
-/* GRID CARDS */
+.section p {
+    max-width: 820px;
+    font-size: 18px;
+    color: #374151;
+}
+
+/* ---------------- GRID CARDS ---------------- */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+    gap: 34px;
     margin-top: 40px;
 }
 
 .card {
-    padding: 25px;
+    padding: 28px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #4b5563;
 }
 
 .card-link {
@@ -81,38 +150,16 @@ h2 {
 }
 
 .card-link:hover .card {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transition: all 0.25s ease;
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.12);
 }
 
-/* REPORTS */
-.reports li {
-    margin-bottom: 12px;
-}
+/* ---------------- PUBLICATIONS ---------------- */
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #111;
-    color: white;
-}
-
-.subhero {
-    padding: 110px 80px 60px 80px;
-    background: #6C8577;
-    color: #0f1a14;
-}
-
-.subhero h1 {
-    font-size: 52px;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 20px;
-    max-width: 650px;
+.publist {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
 }
 
 .publist li {
@@ -123,8 +170,29 @@ footer {
     color: #1d3b2a;
     text-decoration: none;
     font-weight: 500;
+    font-size: 17px;
 }
 
 .publist a:hover {
     text-decoration: underline;
+}
+
+/* ---------------- REPORTS LIST ---------------- */
+
+.reports {
+    padding-left: 18px;
+}
+
+.reports li {
+    margin-bottom: 12px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background: #111;
+    color: white;
+    font-size: 14px;
 }
