@@ -157,13 +157,15 @@ h1, h2, h3, h4, p {
 /* ---------------- PUBLICATIONS ---------------- */
 
 .publist {
-    list-style: none;
-    padding-left: 0;
+    list-style-type: decimal;
+    padding-left: 28px;
     margin-top: 25px;
 }
 
 .publist li {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
+    padding-left: 6px;
+    line-height: 1.7;
 }
 
 .publist a {
