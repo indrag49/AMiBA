@@ -98,3 +98,33 @@ footer {
     background: #111;
     color: white;
 }
+
+.subhero {
+    padding: 110px 80px 60px 80px;
+    background: #6C8577;
+    color: #0f1a14;
+}
+
+.subhero h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    max-width: 650px;
+}
+
+.publist li {
+    margin-bottom: 14px;
+}
+
+.publist a {
+    color: #1d3b2a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.publist a:hover {
+    text-decoration: underline;
+}
