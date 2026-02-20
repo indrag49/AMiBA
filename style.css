@@ -279,3 +279,32 @@ footer {
 .paper-links a:hover {
     text-decoration: underline;
 }
+
+/* Scrollable publications panel */
+
+.papers-scroll {
+    max-height: 650px;   /* height of the visible window */
+    overflow-y: auto;
+    padding-right: 10px; /* prevents scrollbar overlap */
+    margin-top: 25px;
+}
+
+/* nicer scrollbar (Chrome/Safari/Edge) */
+
+.papers-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.papers-scroll::-webkit-scrollbar-track {
+    background: #eef1ee;
+    border-radius: 10px;
+}
+
+.papers-scroll::-webkit-scrollbar-thumb {
+    background: #8FA79A;
+    border-radius: 10px;
+}
+
+.papers-scroll::-webkit-scrollbar-thumb:hover {
+    background: #6C8577;
+}
