@@ -289,7 +289,7 @@ footer {
     margin-top: 25px;
 }
 
-/* nicer scrollbar (Chrome/Safari/Edge) */
+/* /* nicer scrollbar (Chrome/Safari/Edge) */
 
 .papers-scroll::-webkit-scrollbar {
     width: 8px;
@@ -307,4 +307,4 @@ footer {
 
 .papers-scroll::-webkit-scrollbar-thumb:hover {
     background: #6C8577;
-}
+} */
