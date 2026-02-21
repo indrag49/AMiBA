@@ -223,11 +223,20 @@ footer {
 }
 
 /* Image (smaller!) */
-.paper-image {
+/* .paper-image {
     width: 100%;
     height: 160px;   /* was 220px */
     object-fit: cover;
     display: block;
+} */
+
+.paper-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #f3f4f6;
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 /* Text area */
